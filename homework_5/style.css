@@ -1,23 +1,133 @@
+/* PUI-2018 Assignment 5
+Jessica Nip
+Section A  */
+
 body {
 	background: #FFF;
 }
 
+/* large heading */
 h1 {
-	color: #000;
-	font-size: 20px;
-	font-family: Georgia;
+	color: gray;
+	font-size: 16px;
+	font-family: Arial;
 	font-weight: bold;
 	text-align: left;
 }
 
+/* small caption heading */
 h2 {
-	
+	color: #9A9A9A;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: normal;
+	text-align: center;
 }
 
+/* paragraph text */
 p {
-	
+	color: #555555;
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	text-align: left;  
 }
 
-.image {
-	
+/* nav bar style */
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFF;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
 }
+
+/* list style */
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: gray;
+    text-align: left;
+    padding: 12px 16px;
+}
+
+/* logo text */
+.logo {
+    position: absolute;
+    left: 3%;
+    top: 2%;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* logo rectangle */
+#rectangle {
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	width: 175px;
+	height: 20px;
+	background: transparent;
+	border: solid thin gray;
+}
+
+/* centered text over image */
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    color: #4D4D4D;
+	font-family: Georgia;
+	font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* bottom nav left */
+.bottomleft {
+    position: absolute;
+	top: 1070px;
+    left: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    color: #4D4D4D;
+	font-family: Georgia;
+	font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* bottom nav center */
+.bottomcenter {
+    position: absolute;
+	top: 25px;
+    left: 500px;
+    width: 100%;
+    color: #4D4D4D;
+	font-family: Georgia;
+	font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* bottom nav right */
+.bottomright {
+    position: absolute;
+	top: 0px;
+    left: 1100px;
+    width: 100%;
+    color: #4D4D4D;
+	font-family: Georgia;
+	font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
