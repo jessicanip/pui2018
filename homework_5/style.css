@@ -17,15 +17,14 @@ h1 {
 
 /* small caption heading */
 h2 {
-    margin: 20px;
     color: #9A9A9A;
 	font-size: 16px;
 	font-family: Arial;
 	font-weight: normal;
 }
 
+/* large page heading */
 h3 {
-    margin: 20px;
     color: #4D4D4D;
     font-family: Georgia;
     font-weight: bold;
@@ -68,7 +67,6 @@ li a {
 
 /* image style */
 .pastries { 
-    margin-left: 30px;
     width: 288px;
     height: auto; 
 }
@@ -95,6 +93,19 @@ li a {
 	border: solid thin gray;
 }
 
+/* filled CTA button */
+#filledbutton {
+    position: relative;
+    width: 200px;
+    line-height: 40px;
+    background: gray;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: center; 
+    color: white; 
+}
+
 /* centered text over image */
 .center {
     position: absolute;
@@ -108,7 +119,7 @@ li a {
     font-size: 30px;
 }
 
-/* bottom nav left */
+/* bottom nav */
 .bottomnav {
     position: relative;
     width: 150%;
@@ -117,6 +128,15 @@ li a {
 	font-weight: bold;
     text-align: center;
     font-size: 30px;
+}
+
+/* leaving space between elements of bottom nav*/
+.navspacing {
+   position: relative;
+   display: inline-block;
+   float: left;
+   margin: 30px;
+   width: 25%;
 }
 
 /* pastries images in a row */
@@ -128,18 +148,58 @@ li a {
    width: 288px;
 }
 
+/* aligning text and images as grid*/
 .grid {
     position: relative;
-    height: 900px;
+    height: 850px;
     max-width: 1200px;
-    left: 200px;
+    left: 250px;
     text-align: left;
 }
 
-.navspacing {
-   position: relative;
-   display: inline-block;
-   float: left;
-   margin: 30px;
-   width: 25%;
+/* containing body text in left paragraph */
+.leftparagraph {
+    position: relative;
+    height: 700px;
+    max-width: 460px;
+    left: 200px;
+    top: 20px;
+    text-align: left;
 }
+
+/* aligning product image to right */
+.imageright {
+    position: absolute;
+    left: 550px;   
+    top: 0px;
+}
+
+/* aligning text within rectangle
+https://stackoverflow.com/questions/42979428/how-to-center-text-inside-of-a-css-shape
+and creating horizontal space between buttons */
+.buttonspacing {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    width: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 40px;
+    background: transparent;
+    border: solid thin gray;
+    color: #555555;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: center;  
+}
+
+/* creating vertical space between selectors */
+.section {
+    height: 80px;
+    margin-top: 30px;
+}
+

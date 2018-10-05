@@ -3,46 +3,74 @@ Jessica Nip
 Section A -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <!-- link HTML to CSS -->
 <head>
+	<meta charset="UTF-8">
 	<title> Bun Bun Bake Shop </title>
 	<link href="style.css" type ="text/css" rel="stylesheet">
 </head>
 
-<!-- header -->
-<header>
-
-<!-- header: nav bar -->
-<ul>
-	<div class="logo"><li><h1>bun bun bake shop </h1></li></div>
-	<div id="rectangle"></div>
-	<li><a href="roll.html">cinnamon roll</a></li>
-	<li><a href="browse.html">shop pastries</a></li>
-	<li><a href="index.html">home</a></li>
-</ul>
-
-</header>
-
-<!-- body -->
 <body>
+	<!-- body: nav bar -->
+	<ul>
+		<li class="logo"><h1>bun bun bake shop </h1></li>
+		<li id="rectangle"></li>
+		<li><a href="roll.html">featured flavor</a></li>
+		<li><a href="browse.html">shop pastries</a></li>
+		<li><a href="index.html">home</a></li>
+	</ul>
 
+	<!-- aligning paragraphs to left -->
+	<div class="leftparagraph">
+		<h3>Blackberry Cinnamon Rolls</h3>
+		<h2> <b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac euismod dui. </b> </h2>
 
+		<p> Donec cursus neque ac orci ullamcorper, vel vehicula nisl sollicitudin. Suspendisse ac fermentum libero. Sed facilisis nisl eget libero elementum volutpat. Nullam euismod risus tortor, vitae dictum elit efficitur eget. Curabitur commodo, metus non convallis faucibus, mauris est mattis eros, vitae viverra felis purus et purus. In scelerisque lorem tortor, sed auctor lorem gravida et. Integer neque nulla, facilisis in porta vel, condimentum at purus. </p>
 
+		<h2><b> $1.99 </b></h2>	
 
+		<!-- aligning image to right -->
+		<div class="imageright"><img src="images/product.jpg" alt="Blackberry Cinnamon Roll"></div>
 
+		<!-- creating sections for each selector type -->
 
+		<p> ______ </p>
 
+		<!-- Quantity selector -->
+		<div class="section">
+			<h2><b> Quantity</b></h2>
+			<div class="buttonspacing">1</div>
+			<div class="buttonspacing">3</div>
+			<div class="buttonspacing">6</div>
+			<div class="buttonspacing">12</div>
+		</div>
 
-<!-- body: bottom navigation - https://www.w3schools.com/howto/howto_css_navbar_border.asp-->
-<div class="bottomnav">
-	<div align="center" class="navspacing"><p><b> Bun Bun Bake Shop </b><br>5000 Forbes Avenue <br> Pittsburgh PA 15289 <br> (412)500-50000</p></div>
+		<!-- Glazing selector -->
+		<div class="section">
+			<h2><b> Glazing </b></h2>
+			<div class="buttonspacing">None</div>
+			<div class="buttonspacing">Sugar-Milk</div>
+			<div class="buttonspacing">Vanilla-Milk</div>
+			<div class="buttonspacing">Double-Chocolate</div>
+		</div>
 
-	<div align="center" class="navspacing"><p>© Bun Bun Bake Shop. All Rights Reserved.</p></div>
+		<!-- Add to Cart button -->
+		<div class="section">
+			<div id="filledbutton">Add to Cart</div>
+		</div>
 
-	<div align="center" class="navspacing"><p><b> About Us <br> Pastries <br> Your Orders <br> Cart</b></p></div>
-</div>
+	</div>
+
+	<!-- body: bottom navigation - https://www.w3schools.com/howto/howto_css_navbar_border.asp-->
+	<div class="bottomnav">
+		<div class="navspacing"><p><b> Bun Bun Bake Shop </b><br>5000 Forbes Avenue <br> Pittsburgh PA 15289 <br> (412)500-50000</p></div>
+
+		<div class="navspacing"><p>© Bun Bun Bake Shop. All Rights Reserved.</p></div>
+
+		<div class="navspacing"><p><b> About Us <br> Pastries <br> Your Orders <br> Cart</b></p></div>
+	</div>
 
 </body>
 
