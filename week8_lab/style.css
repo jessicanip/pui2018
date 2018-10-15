@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial';
+    color: black;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Helvetica';
+}
+
+#images {
+    border: 5px gray;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: green;
+    margin: 10px;
+}
+
+#button-action-text {
+    display: none;
+}
