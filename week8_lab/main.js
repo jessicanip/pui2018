@@ -74,24 +74,16 @@ $(document).ready(function() {
     $("#images").attr("src", animal.image);
 
     $("#save-animal").click(function() {
-    //when we are clearing the animal
       if (yesSaved) 
       {
-      // clear the animal from the local storage
         localStorage.removeItem("savedAnimal");
-
-      // if this button was clicked, hide button and show message to user
         $("#save-animal").css("display", "none");
         $("#text").text("Cleared!");
         $("#text").css("display", "block");
       } 
-    //when we are saving the animal
       else 
       {
-      // save the animal to the local storage
         localStorage.setItem("savedAnimal", JSON.stringify(animal));
-
-      // if this button was clicked, hide button and show message to user
         $("#save-animal").css("display", "none");
         $("#text").text("Saved!");
         $("#text").css("display", "block");
