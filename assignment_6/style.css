@@ -1,4 +1,4 @@
-/* PUI-2018 Assignment 5
+/* PUI-2018 Assignment 6
 Jessica Nip
 Section A  */
 
@@ -167,6 +167,14 @@ li a {
     text-align: left;
 }
 
+.shoppingUI {
+    position: relative;
+    height: 700px;
+    left: 200px;
+    top: 20px;
+    text-align: left;
+}
+
 /* aligning product image to right */
 .imageright {
     position: absolute;
@@ -203,3 +211,44 @@ and creating horizontal space between buttons */
     margin-top: 30px;
 }
 
+/* table properties, items list */
+#topcart {
+    padding-top: 30px;
+    width: 75%;
+    color: #555555;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: left; 
+}
+
+
+#topcart th {
+    color: #555555;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: left; 
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* table properties, total pricing */
+#bottomcart {
+    padding-top: 30px;
+    margin-left: 550px;
+    width: 27%;
+    color: #555555;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal; 
+}
+
+.buttonleft {
+    padding-top: 30px;
+    margin-left: 550px;
+}
