@@ -4,13 +4,14 @@ Section A  */
 
 body {
 	background: #FFF;
+    overflow-x: hidden;
 }
 
 /* large heading */
 h1 {
-	color: gray;
+	color: #CD5C5C;
 	font-size: 16px;
-	font-family: Arial;
+	font-family: courier;
 	font-weight: bold;
 	text-align: left;
 }
@@ -63,6 +64,7 @@ li a {
     color: gray;
     text-align: left;
     padding: 12px 16px;
+    text-decoration: none;
 }
 
 /* image style */
@@ -75,11 +77,8 @@ li a {
 /* logo text */
 .logo {
     position: absolute;
-    left: 3%;
-    top: 2%;
-    font-size: 14px;
-    font-family: Arial;
-    font-weight: bold;
+    left: 2%;
+    top: 1%;
 }
 
 /* logo rectangle */
@@ -176,16 +175,35 @@ li a {
 }
 
 /* aligning product image to right */
-.imageright {
+.imageright img {
     position: absolute;
     left: 550px;   
-    top: 0px;
+    top: 40px;
+    max-width: 100%;
 }
 
 /* aligning text within rectangle
 https://stackoverflow.com/questions/42979428/how-to-center-text-inside-of-a-css-shape
 and creating horizontal space between buttons */
-.buttonspacing {
+.quantity-button {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    width: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 40px;
+    background: transparent;
+    border: solid thin gray;
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;  
+}
+
+.glazing-button {
     position: relative;
     display: inline-block;
     float: left;
@@ -212,7 +230,7 @@ and creating horizontal space between buttons */
 }
 
 /* table properties, items list */
-#topcart {
+.topcart {
     padding-top: 30px;
     width: 75%;
     color: #555555;
@@ -223,7 +241,7 @@ and creating horizontal space between buttons */
 }
 
 
-#topcart th {
+.topcart th {
     color: #555555;
     font-size: 16px;
     font-family: Arial;
@@ -238,9 +256,9 @@ th, td {
 }
 
 /* table properties, total pricing */
-#bottomcart {
+.bottomcart {
     padding-top: 30px;
-    margin-left: 550px;
+    margin-left: 650px;
     width: 27%;
     color: #555555;
     font-size: 12px;
@@ -250,5 +268,29 @@ th, td {
 
 .buttonleft {
     padding-top: 30px;
-    margin-left: 550px;
+    margin-left: 650px;
+}
+
+#flavor {
+    color: #555555;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: left;  
+}
+
+#glazing {
+    color: #555555;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: left;  
+}
+
+#quantity {
+    color: #555555;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: left;  
 }

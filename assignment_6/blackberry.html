@@ -10,15 +10,15 @@ Section A -->
 	<meta charset="UTF-8">
 	<title> Bun Bun Bake Shop </title>
 	<link href="style.css" type ="text/css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js" type="text/javascript"></script>
 </head>
 
 <body>
 	<!-- body: nav bar -->
 	<ul>
 		<li class="logo"><h1>bun bun bake shop </h1></li>
-		<li id="rectangle"></li>
 		<li><a href="cart.html">cart</a></li>
-		<li><a href="roll.html">featured flavor</a></li>
 		<li><a href="browse.html">shop pastries</a></li>
 		<li><a href="index.html">home</a></li>
 	</ul>
@@ -33,7 +33,7 @@ Section A -->
 		<h2><b> $1.99 </b></h2>	
 
 		<!-- aligning image to right -->
-		<div class="imageright"><img src="images/product.jpg" alt="Blackberry Cinnamon Roll"></div>
+		<div class="imageright"><img src="images/pastries_2.jpg"  alt="Blackberry Cinnamon Roll"></div>
 
 		<!-- creating sections for each selector type -->
 
@@ -42,24 +42,27 @@ Section A -->
 		<!-- Quantity selector -->
 		<div class="section">
 			<h2><b> Quantity</b></h2>
-			<div class="buttonspacing">1</div>
-			<div class="buttonspacing">3</div>
-			<div class="buttonspacing">6</div>
-			<div class="buttonspacing">12</div>
+			<div id ="selection">
+				<button class="quantity-button" onclick="selectorTypeQuan(1)" id ="quan1">1</button>
+				<button class="quantity-button" onclick="selectorTypeQuan(3)" id ="quan3">3</button>
+				<button class="quantity-button" onclick="selectorTypeQuan(6)" id = "quan6">6</button>
+				<button class="quantity-button" onclick="selectorTypeQuan(12)" id = "quan12">12</button>
+			</div>
 		</div>
 
 		<!-- Glazing selector -->
 		<div class="section">
 			<h2><b> Glazing </b></h2>
-			<div class="buttonspacing">None</div>
-			<div class="buttonspacing">Sugar-Milk</div>
-			<div class="buttonspacing">Vanilla-Milk</div>
-			<div class="buttonspacing">Double-Chocolate</div>
+			<button class="glazing-button" onclick="selectorTypeGlaze('None',1)" id="glaze1">None
+			</button>
+			<button class="glazing-button" onclick="selectorTypeGlaze('Sugar-Milk',2)" id="glaze2">Sugar-Milk</button>
+			<button class="glazing-button" onclick="selectorTypeGlaze('Vanilla-Milk',3)" id="glaze3">Vanilla-Milk</button>
+			<button class="glazing-button" onclick="selectorTypeGlaze('Double-Chocolate',4)" id="glaze4">Double-Chocolate</button>
 		</div>
 
 		<!-- Add to Cart button -->
 		<div class="section">
-			<div id="filledbutton">Add to Cart</div>
+			<div id="filledbutton" onclick="addCart('Blackberry Cinnamon Rolls')">Add to Cart</div>
 		</div>
 
 	</div>

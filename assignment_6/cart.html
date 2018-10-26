@@ -10,15 +10,15 @@ Section A -->
 	<meta charset="UTF-8">
 	<title> Bun Bun Bake Shop </title>
 	<link href="style.css" type ="text/css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body>
 	<!-- body: nav bar -->
 	<ul>
 		<li class="logo"><h1>bun bun bake shop </h1></li>
-		<li id="rectangle"></li>
 		<li><a href="cart.html">cart</a></li>
-		<li><a href="roll.html">featured flavor</a></li>
 		<li><a href="browse.html">shop pastries</a></li>
 		<li><a href="index.html">home</a></li>
 	</ul>
@@ -28,33 +28,22 @@ Section A -->
 		<h3>Review Your Cart</h3>
 		<h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac euismod dui. </h2>
 
-		<table id="topcart">
+		<table class="topcart" id="cartID">
   			<tr>
     			<th>Item</th>
+    			<th>Glazing</th>
     			<th>Price</th>
     			<th>Quantity</th>
   			</tr>
-
-  			<tr>
-    			<td><b>Blackberry Cinnamon Roll</b> <br> Sugar-Milk Glazing</td>
-    			<td>$1.99</td>
-    			<td>3</td>
-  			</tr>
+  			<script> addRows();</script>
   		</table>
 
-  		<table id="bottomcart"> 
-   			<tr>
-    			<td><b>Price</b></td>
-    			<td>$5.97</td>
-  			</tr> 	
-   			<tr>
-    			<td><b>Tax</b></td>
-    			<td>$0.42</td>
-  			</tr> 	
+  		<table class="bottomcart"> 	
    			<tr>
     			<td><b>Total Price</b></td>
-    			<td><b>$6.39</b></td>
-  			</tr> 	
+    			<td id= "totalPrice"></td>
+  			</tr> 
+  			<script> addPrice(); </script>	
 		</table>
 
 		<!-- checkout button -->
