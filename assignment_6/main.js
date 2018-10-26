@@ -54,20 +54,22 @@ function selectorTypeGlaze(itemSelected,num) {
 
 //onclick Add To Cart
 function addCart(flavor){
+	//clearing
 	var temp_quantity = localStorage.getItem("curQuantity");
 	var temp_glazing = localStorage.getItem("curGlazing");
 	localStorage.removeItem("curQuantity");
 	localStorage.removeItem("curGlazing");
 	
-	console.log(temp_quantity);
-	console.log(temp_glazing);
+	//create object for user selection
 	var obj = new userChoice(flavor,temp_quantity,temp_glazing);
 	var curCart = JSON.parse(localStorage.getItem("cart"));
 	
+	//if cart doesn't exist, make new cart
 	if ((curCart == null) || (curCart == undefined)){
 		var cart_obj = makeCart(obj);
 		localStorage.setItem("cart",JSON.stringify(cart_obj));
 	}
+	//if cart exists, push selection into cart
 	else {
 		curCart.push(obj);
 		localStorage.setItem("cart",JSON.stringify(curCart));
@@ -107,12 +109,15 @@ function makeCart(item) {
 	return [item];
 }
 
+//retrieve cart selections
 var arr = JSON.parse(localStorage.getItem("cart"));
 
+//put selections into new rows
 function addRows() {
 	var table = document.getElementById("cartID");
 	var arr = JSON.parse(localStorage.getItem("cart"));
 	
+	//if cart is empty, add placeholder text
 	if (arr == undefined) {
 		var row = table.insertRow(1);
 		var cur_td = document.createElement('td');
@@ -127,6 +132,7 @@ function addRows() {
 		cur_td.innerHTML = "Your Cart is Empty!";
 		row.appendChild(cur_td);
 	}
+	//if selections are made, create new rows for each item
 	else {
 		for (var i = 0; i < arr.length; i++) {
 			var row = table.insertRow(i+1);
@@ -159,7 +165,7 @@ function addRows() {
 	}
 }
 
-//remove row upon X onclick
+//remove row upon onclick X button
 function removeItem(index) {
 	var arr = JSON.parse(localStorage.getItem("cart"));
 	arr.splice(index,1);
@@ -204,6 +210,3 @@ function addPrice() {
 	var string = totalPrice.toString();
 	total.innerHTML = string;
 }
-
-//add remove functionality
-
