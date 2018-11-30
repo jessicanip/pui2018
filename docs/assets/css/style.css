@@ -131,7 +131,7 @@ a:visited {
 .aboutimage {
 	width: 80%;
 	height: auto;
-	padding-top: 20%;
+	padding-top: 10%;
 }
 
 .detailimage {
@@ -177,15 +177,11 @@ a:visited {
 	background-color: white;
 }
 
-/* define rows and columns for About page */
-.column {
-	float: left;
-	width: 35%;
-}
+/* define row ID for About page */
 
-.row {
+#aboutrow {
 	position: relative;
-	top: 160px;
+	top: 110px;
 	margin-left: 20%;
 }
 
